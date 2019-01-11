@@ -1,8 +1,8 @@
-## Lexical Structure
+# Lexical Structure
 * Notes from Python in a Nutshell, 3rd Edition.
 * lowest-level syntax of the language
 
-### lines and indentation
+## lines and indentation
 * a python prog is a sequence of **logical lines** each made up of one or more **physi‐ cal lines**
 * **comment** # that is not inside a string literal starts a comment
 * **no delimiter**. when a stmt is too long for one physical line, join two adjacent physical lines into a logical line by ensuring that the first physical line has no comment and ends with a backslash \
@@ -11,7 +11,7 @@
 * Standard Python style is to use **four spaces** (never tabs) per indentation level.
 
 
-### character sets
+## character sets
 v3 source: Unicode character, encoded as UTF-8
 * In both v2 and v3, you may choose to tell Python that a certain source file is written in a different encoding
 * To let Python know that a source file is written with a nonstandard encoding, start your source file with **a comment** whose form must be, for example:
@@ -21,7 +21,7 @@ v3 source: Unicode character, encoded as UTF-8
     ```
 * the above **coding directive comment** (also known as an encoding declaration) is taken as such only if it is at the start of a source file
 
-### tokens
+## tokens
 * Each token corresponds to a substring of the logical line. 
 * The normal token types are 
     1. identifiers 
@@ -119,3 +119,20 @@ A literal is the direct denotation in a program of a **data value** (a number, s
     {1, 2, 4, 8, 'string'}      # set
     # there's no literal to denote empty set. Use set() instead.
     ```
+
+## Statements
+* A Python source file = a sequence of simple and compound statements 
+* **NO declarations** 
+
+#### simple statements
+one that contains no other statements and lies entirely within a logical line.  
+
+* an **expression** can stand on its own as a simple statement. 
+    * beyond in a repl environment, expression statements are only useful to **call functions (and other callables)** that have **side effects**
+* an **assignment** is a simple statement that assigns values to variables. 
+    * An assignment in Python is a statement and can never be part of an expression.
+
+#### compound statements
+* contains one or more other statements and controls their execution. 
+* A compound statement has one or more clauses, aligned at the same indentation. 
+* Each clause has a header starting with a keyword and ending with a colon (:), followed by a body, which is a sequence of one or more statements. 
