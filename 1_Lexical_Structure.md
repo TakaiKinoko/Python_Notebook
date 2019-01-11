@@ -52,3 +52,13 @@ v3 source: Unicode character, encoded as UTF-8
         ```
 
 #### keywords
+* v2: 31
+* v3: 33
+* Keywords contain lowercase letters only
+* Reserved for special syntactic uses
+* keywords may mark the beginning of a simple stmt or a clause of a compound stmt, or serve as operators
+
+#### operators
+* use nonalphanumeric characters and character combinations as operators
+
+#### delimiters
