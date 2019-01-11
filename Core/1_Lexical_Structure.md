@@ -122,7 +122,7 @@ A literal is the direct denotation in a program of a **data value** (a number, s
 
 ## Statements
 * A Python source file = a sequence of simple and compound statements 
-* **NO declarations** 
+* there's no **NO declarations** in python
 
 #### simple statements
 one that contains no other statements and lies entirely within a logical line.  
