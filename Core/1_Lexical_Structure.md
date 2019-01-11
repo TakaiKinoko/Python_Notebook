@@ -60,5 +60,62 @@ v3 source: Unicode character, encoded as UTF-8
 
 #### operators
 * use nonalphanumeric characters and character combinations as operators
+```
++ - * / % ** // << >> & | ^ ~ < <= > >= <> != ==
+```
 
 #### delimiters
+```
+(  )  [  ]  {  }   ,  :  .  `  =  ;  @
+```
+
+augmented assignment operators, which are delimiters, but also perform operations:
+```
++=  -=  *=  /=  //=  %=  &=  |=  ^=  >>=  <<=  **=
+```
+
+surround string literals:
+```
+' and "
+```
+
+start a comment: 
+```
+#
+```
+
+joining physical lines into one logical line: 
+```
+\
+```
+
+escape char in string:
+```
+\
+```
+
+#### literals
+A literal is the direct denotation in a program of a **data value** (a number, string, or container)
+
+* **base types**
+    number and string
+    ```
+    42      # Int literal
+    3.14    # Float literal
+    1.0j    # Imaginary literal
+    'hello' # String 
+    "world" # String
+    """ Python """  # Triple-quoted string
+    ```
+* **compound**
+    combine number and string literals with delimiters to build **container type** data values: 
+    ```
+    []  # empty list
+    [1, 3.14, 'hello']  # list
+    100, 200, 300       # tuple
+    ()      # empty tuple
+    {'x': 42, 'y':3.14}     #dict
+    {}      # empty dict
+    {1, 2, 4, 8, 'string'}      # set
+    # there's no literal to denote empty set. Use set() instead.
+    ```
