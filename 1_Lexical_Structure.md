@@ -31,3 +31,20 @@ v3 source: Unicode character, encoded as UTF-8
     1. literals
 
 #### identifiers
+* 
+    *  starts with a letter (in v2, A to Z or a to z; in v3, other characters that Unicode classifies as letters are also allowed) or an underscore (_)
+    * followed by zero or more letters, underscores, and digits (in v2, 0 to 9; in v3, other characters that Unicode classifies as digits or combining marks are also allowed
+    * Punctuation characters such as @, $, and ! are **not allowed** in identifiers.
+* **Python conventions**:
+    * class name: start with cap
+    * other ids: start with lower case 
+    * 
+        ```
+        _someName   # this id is meant to be private
+        ```
+    * 
+        ```
+        __someName  # this is a strongly private identifier
+        ```
+        
+    

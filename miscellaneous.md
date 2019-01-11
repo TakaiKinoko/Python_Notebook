@@ -1,4 +1,4 @@
-### start repl from cmd
+### start repl from command line
 * 
     ```
     $ python3
