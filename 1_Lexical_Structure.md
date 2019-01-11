@@ -46,5 +46,9 @@ v3 source: Unicode character, encoded as UTF-8
         ```
         __someName  # this is a strongly private identifier
         ```
-        
-    
+    * 
+        ```
+        __someName__  # this is a language-defined special name
+        ```
+
+#### keywords
