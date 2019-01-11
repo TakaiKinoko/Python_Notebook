@@ -78,3 +78,32 @@ an ordered **container** of items, **indexed** by integers
     Second line
     """ # like 'First line\nSecond line\n' but more readable
     ```
+    The only character that cannot be part of a triple-quoted string is an unescaped backslash, 
+
+* **raw string**: a variant of a string literal. 
+    * The syntax is the same as for quoted or triple-quoted string literals, except that an r or R immediately precedes the leading quote. 
+    * In raw strings, escape sequences are literally copied into the string, including backslashes and newline characters.
+
+#### Tuples
+* **immutable**
+* **ordered**
+* **heterogeneous** items. Can contain mutable items (e.g. lists), but best not to.
+* **pair**: a tuple of two items
+
+* constructor:
+    1. 
+        ```
+        (100, 200, 300)         # Tuple with three items
+        (3.14,)                 # Tuple with 1 item needs trailing comma
+        ()                      # Empty tuple (parentheses NOT optional)
+        ```
+    1. built in function tuple().
+        * When x is iterable, tuple(x) returns a tuple whose items are the same as those in x.
+        ```
+        tuple('wow')            # equivalent to ('w', 'o', 'w')
+        tuple()                 # returns an empty tuple ()
+        ```
+
+#### Lists
+* **mutable**
+
