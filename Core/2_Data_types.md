@@ -148,3 +148,25 @@ an ordered **container** of items, **indexed** by integers
 * types of the keys in a dict must be **hashable**
 * item of a dictionary: key/value pair
 * **no duplicate keys**
+
+* constructor
+    * 
+    ```
+    {'x':42, 'y':3.14, 'z':7}
+    {1:'za', 'br':23}           # Dictionary with mixed key types
+    {}          # empty dict
+    ```
+    * 
+    ```
+    dict(x=42, y=3.14, z=7)     # Dictionary with three items, str keys
+    dict([(1, 2), (3, 4)]) # Dictionary with two items, int keys
+    dict([(1,'za'), ('br',23)]) # Dictionary with mixed key types
+    dict() # Empty dictionary
+    ```
+    * dict.fromkeys: 
+        1. The first arg is an iterable whose items become the keys of the dict.  
+        1. The second arg is the value that's assigned to every key. 
+        1. If no snd arg, values default to **None**
+    ```
+    dict.fromkeys('hello', 2) # same as {'h':2, 'e':2, 'l':2, 'o':2}
+    ```
