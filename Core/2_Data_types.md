@@ -106,4 +106,45 @@ an ordered **container** of items, **indexed** by integers
 
 #### Lists
 * **mutable**
+* **heterogeneous**
+* **ordered**
+* constructor 
+    * 
+    ```
+    [42, 3.14, 'hello']
+    [100]
+    []
+    ```
+    * 
+    ```
+    list('wow')     # euqal to ['w', 'o', 'w']
+    list()          #build an empty list
+    ```
+#### Sets
+* **no duplicate**
+* **not ordered**
+* may be heterogeneous but all must be **hashable**
+* 
+    * instances of type **set**:
+    mutable => **not** hashable
+    * instances of type **frozenset**: immutable => hashable
 
+* constructor
+    *
+    ```
+    set()       #empty set
+    set(sthIterable)   
+    ```
+    * 
+    ```
+    {42, 3.14, 'hello'}
+    {100}
+    set()           # note that {} doesn't mean empty set!!
+    ```
+
+#### Dictionaries
+* **not ordered**, indexed by keys
+* **mutable**
+* types of the keys in a dict must be **hashable**
+* item of a dictionary: key/value pair
+* **no duplicate keys**
