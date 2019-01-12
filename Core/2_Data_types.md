@@ -170,3 +170,32 @@ an ordered **container** of items, **indexed** by integers
     ```
     dict.fromkeys('hello', 2) # same as {'h':2, 'e':2, 'l':2, 'o':2}
     ```
+
+#### None
+* a null object. 
+* None has no methods or other attributes.
+* Functions return None as their result unless they have specific return statements coded to return other values.
+
+#### Callables
+* callable types are those whose instances support the function call operation
+* 
+    1. functions
+    1. generators
+    1. types    -- Calling a type normally creates and returns a new instance of that type.
+    1. class objects (user-defined types)
+    1. methods -- functions bound to class attributes
+    1. instances of classes -- that supply a special method named __call__.
+
+#### Boolean
+*  bool is a subclass of int
+* when NOT to use bool():
+    * 
+        ```
+        if x ...    # not if bool(x)
+        ```
+* when TO use bool():
+    * to count the number of true items in a sequence
+    ```
+    def count_trues(seq): return sum(bool(x) for x in seq)
+    ```
+    
